@@ -23,7 +23,7 @@ import com.study.jpa.vo.User;
 
 @RestController
 @Transactional
-@RequestMapping("/queryDSL")
+@RequestMapping("/jpa")
 public class JpaController {
 	
 	@Autowired
