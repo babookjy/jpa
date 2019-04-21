@@ -56,17 +56,11 @@ public class JpaController {
 		return user;
 	}
 	
-	@PostMapping
-	public void insert() {
-		em.persist(
-				User.builder()
-				.firstName("lee")
-				.lastName("saein")
-				.email("saein-lee@gmail.com")
-				.password("3333")
-				.build()
-			);
-	}
+	/*
+	 * @PostMapping public void insert() { em.persist( User.builder()
+	 * .firstName("lee") .lastName("saein") .email("saein-lee@gmail.com")
+	 * .password("3333") .build() ); }
+	 */
 	
 	@PutMapping
 	public long update() {
